@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+:root {
+    --orange: hsl(31, 77%, 52%);
+    --cyan: hsl(184, 100%, 22%);
+    --dark-cyan: hsl(179, 100%, 13%);
+    --transparent-white: hsla(0, 0%, 100%, 0.65);
+    --light-gray: hsl(0, 0%, 95%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--light-gray);
+}
+
+.card-container {
+    width: 375px;
+    border-radius: 10px;
+}
+
+p,
+h2 {
+    font-size: 1.2rem;
+    line-height: 25px;
+    padding: 25px 0;
+}
+
+p {
+    margin-bottom: 70px;
+}
+
+img {
+    padding: 0 0 25px 0;
+}
+
+.card1 {
+    border-radius: 10px 10px 0 0 ;
+    background: var(--orange);
+    padding: 49px;
+    position: relative;
+}
+
+.card2 {
+    background: var(--cyan);
+    padding: 49px;
+    position: relative;
+}
+
+.card3 {
+    border-radius: 0 0 10px 10px;
+    background: var(--dark-cyan);
+    padding: 49px;
+    position: relative;
+}
+
+h2 {
+    font-family: big shoulders display;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--light-gray);
+}
+
+.detail {
+    color: var(--transparent-white);
+    font-family: lexend deca;
+}
+
+.button1  {
+    font-family: lexend deca;
+    display: inline-block;
+    color: var(--orange);
+    background: var(--light-gray);
+    text-align: center;
+    padding: 14px 35px;
+    position: absolute;
+    border-radius: 25px;
+    top: 380px;
+}
+
+.button2  {
+    font-family: lexend deca;
+    display: inline-block;
+    color: var(--cyan);
+    background: var(--light-gray);
+    text-align: center;
+    padding: 14px 35px;
+    border-radius: 25px;
+    position: absolute;
+    top: 380px;
+}
+
+.button3  {
+    font-family: lexend deca;
+    display: inline-block;
+    color: var(--dark-cyan);
+    background: var(--light-gray);
+    text-align: center;
+    padding: 14px 35px;
+    border-radius: 25px;
+    margin-top: 20px;
+    position: absolute;
+    top: 360px;
+}
+
+.button1:hover, .button2:hover, .button3:hover {
+    background: none;
+    border: solid 1px var(--light-gray);
+    color: var(--light-gray);
+    cursor: pointer;
+}
+
+
+@media (min-width: 1440px) {
+
+    .card-container {
+        width: 1000px;
+        display: grid;
+        grid-template-columns: 33% 33% 34%;
+    }
+
+    .card1 {
+        border-radius: 10px 0 0 10px;
+    }
+
+    .card3 {
+        border-radius: 0 10px 10px 0;
+    }
+
+}
