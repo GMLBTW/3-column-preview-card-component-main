@@ -121,6 +121,9 @@ h2 {
 
 
 @media (min-width: 1440px) {
+    body {
+        height: 100vh;
+    }
 
     .card-container {
         width: 1000px;
